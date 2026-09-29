@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Huduma Zinazopatikana — Opportunity Education Support (OES), Elimu ya Chekechea na Masomo ya Ziada (Tuition) Chanika, Dar es Salaam.">
+  <title>Huduma Zinazopatikana — Opportunity Education Support (OES)</title>
+
+  <!-- Google Fonts: Warm Display + Clean Readable Body (Preconnected & Swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Immediate Theme Application (Zero FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('oes_theme_preference');
+      const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="home.html" class="brand" aria-label="Opportunity Daycare Home">
+          <img src="../images/OES LOGO.jpg" alt="Opportunity Daycare Crest" class="brand-logo" width="46" height="46">
+          <div class="brand-text">
+            <span class="brand-title">Opportunity Daycare</span>
+            <span class="brand-subtitle">& Nursery School</span>
+          </div>
+        </a>
+
+        <nav aria-label="Urambazaji Kuu">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Nyumbani</a></li>
+            <li><a href="About.html" class="nav-link">Kuhusu Sisi</a></li>
+            <li><a href="services.html" class="nav-link active">Huduma (Swahili)</a></li>
+            <li><a href="service.html" class="nav-link">Services (English)</a></li>
+            <li><a href="schoolGallery.html" class="nav-link">Picha &amp; Video</a></li>
+            <li><a href="#contact" class="nav-link">Mawasiliano</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Badili muonekano">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.3 2a10 10 0 0 0 9.7 12.8 10 10 0 1 1-12.5-12.6c.9-.2 1.9-.2 2.8-.2z"/>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="menu-toggle-btn" aria-label="Fungua orodha ya menyu" aria-expanded="false">
+            <span class="hamburger-bars">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Hero Intro -->
+      <section class="hero-card reveal">
+        <div class="hero-badge">🇹🇿 Opportunity Education Support (OES)</div>
+        <h1 class="hero-title">
+          Huduma <span class="highlight">Zinazopatikana</span>
+        </h1>
+        <p class="hero-subtitle">
+          Taasisi ya <strong>Opportunity Education Support (OES)</strong> ina dhumuni la kutoa elimu bora, mafunzo ya kisasa, na mazingira wezeshi kwa watoto na wanafunzi katika ngazi mbalimbali za masomo.
+        </p>
+        <div class="hero-actions">
+          <a href="service.html" class="btn-liquid"><span>Tazama kwa Kiingereza (English Version)</span></a>
+          <a href="service.html#admission" class="btn-liquid btn-liquid-gold"><span>Fomu ya Kujiunga</span></a>
+        </div>
+      </section>
+
+      <!-- Huduma Makundi -->
+      <section class="section reveal delay-1">
+        <div class="section-header">
+          <span class="section-badge">Makundi ya Elimu</span>
+          <h2 class="section-title">Programu na Ngazi za Masomo</h2>
+          <p class="section-desc">Elimu yetu imegawanyika katika ngazi zifuatazo ili kumpa mtoto msingi imara na ufaulu wa juu.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- 1. Daycare na Nursery -->
+          <div class="card card-glass reveal delay-1">
+            <div class="card-icon">🧸</div>
+            <h3 class="card-title">1. Daycare &amp; Nursery (Chekechea)</h3>
+            <p class="card-desc">
+              Elimu ya malezi na maandalizi ya awali kuanzia umri wa miaka 2 na kuendelea. Wanafunzi wamegawanywa katika madarasa ya <em>Baby Class, KG 1, KG 2 na KG 3</em>.
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">Miaka 2 - 4 (Baby Class)</li>
+              <li class="pill-item">KG 1 &amp; KG 2</li>
+              <li class="pill-item">Maandalizi ya Msingi</li>
+            </ul>
+          </div>
+
+          <!-- 2. Masomo ya Ziada Msingi -->
+          <div class="card card-glass card-featured reveal delay-2">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">2. Tuition ya Shule za Msingi</h3>
+            <p class="card-desc">
+              Mafunzo ya ziada kuanzia Darasa la Kwanza hadi Darasa la Saba (Standard 1–7) yakifundishwa na walimu wenye uzoefu mkubwa wa mitihani ya taifa.
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">Hisabati</li>
+              <li class="pill-item">Kiingereza</li>
+              <li class="pill-item">Sayansi</li>
+              <li class="pill-item">Jiografia</li>
+              <li class="pill-item">Historia</li>
+              <li class="pill-item">Kiswahili</li>
+            </ul>
+          </div>
+
+          <!-- 3. Sekondari & Pre-Form -->
+          <div class="card card-glass reveal delay-3">
+            <div class="card-icon">🔬</div>
+            <h3 class="card-title">3. Sekondari &amp; Pre-Form Courses</h3>
+            <p class="card-desc">
+              Masomo ya sekondari (Kidato cha 1–4), pamoja na kozi maalum za <strong>Pre-Form One</strong> (Septemba–Desemba) na <strong>Pre-Form Five</strong> (kuanzia Novemba baada ya NECTA).
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">Physics &amp; Chemistry</li>
+              <li class="pill-item">Biology &amp; Mathematics</li>
+              <li class="pill-item">Pre-Form 1 &amp; 5</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Refined Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Opportunity Daycare</h3>
+          <p class="footer-tagline">Kujenga msingi imara na thabiti kwa mustakabali wa mtoto wako.</p>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Mahali: Chanika, Dar es Salaam, Tanzania</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <span>Simu: +255 713 656 262 &bull; +255 752 626 265</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>Barua Pepe: opportunitynurseryschool@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Viungo vya Haraka</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Nyumbani</a></li>
+            <li><a href="About.html">Kuhusu Sisi</a></li>
+            <li><a href="service.html">Huduma Zote (EN)</a></li>
+            <li><a href="schoolGallery.html">Picha za Shule</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mawasiliano na Kujiunga</h4>
+          <ul class="footer-list">
+            <li><a href="service.html#admission">Fomu ya Kujiunga</a></li>
+            <li><a href="School management system.html">OES Portal</a></li>
+            <li><a href="school compounds.html">Mazingira ya Shule</a></li>
+            <li><a href="studentsBirthdays.html">Sherehe za Kuzaliwa</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Opportunity Daycare and Nursery School. Haki zote zimehifadhiwa.</p>
+        <div class="footer-credits">
+          <span>Imebuniwa na Lucas &bull; Simu: +255 787 608 277</span>
+          <img src="../images/lucas.jpeg" alt="Lucas mbunifu" class="developer-avatar" width="32" height="32" loading="lazy">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🌐 HTML - Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${file}"
+        },
+        {
+            "name": "🎨 CSS - Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "name": "🟨 JavaScript - Node.js",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        // To enable PHP debugging, install the "PHP Debug" extension (xdebug.php-debug) in VS Code:
+        // {
+        //     "name": "🐘 PHP - Current File",
+        //     "type": "php",
+        //     "request": "launch",
+        //     "program": "${file}",
+        //     "cwd": "${fileDirname}",
+        //     "runtimeArgs": [
+        //         "-dxdebug.mode=debug",
+        //         "-dxdebug.start_with_request=yes"
+        //     ],
+        //     "port": 9003,
+        //     "stopOnEntry": false
+        // },
+        {
+            "name": "☕ Java - Current File",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "name": "🐍 Python - Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

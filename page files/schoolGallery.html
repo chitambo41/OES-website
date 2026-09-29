@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Opportunity Daycare & Nursery Center Gallery — Explore photos and videos of our school compounds, classroom lessons, and student birthday celebrations.">
+  <title>School Gallery — Opportunity Daycare &amp; Nursery School</title>
+
+  <!-- Google Fonts: Warm Display + Clean Readable Body (Preconnected & Swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Immediate Theme Application (Zero FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('oes_theme_preference');
+      const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="home.html" class="brand" aria-label="Opportunity Daycare Home">
+          <img src="../images/OES LOGO.jpg" alt="Opportunity Daycare Crest" class="brand-logo" width="46" height="46">
+          <div class="brand-text">
+            <span class="brand-title">Opportunity Daycare</span>
+            <span class="brand-subtitle">& Nursery School</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="service.html" class="nav-link">Services</a></li>
+            <li><a href="service.html#admission" class="nav-link">Admission</a></li>
+            <li><a href="schoolGallery.html" class="nav-link active">School Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.3 2a10 10 0 0 0 9.7 12.8 10 10 0 1 1-12.5-12.6c.9-.2 1.9-.2 2.8-.2z"/>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bars">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Hero Intro -->
+      <section class="hero-card reveal">
+        <div class="hero-badge">📸 Campus Life Moments</div>
+        <h1 class="hero-title">
+          Welcome to the <span class="highlight">Opportunity Daycare</span> Gallery
+        </h1>
+        <p class="hero-subtitle">
+          Here we share photos and videos from life, learning, and celebratory events across our school campus. Select an event category below to immerse yourself in our student community.
+        </p>
+      </section>
+
+      <!-- Event Categories Grid -->
+      <section class="section reveal delay-1">
+        <div class="section-header">
+          <span class="section-badge">Event Collections</span>
+          <h2 class="section-title">Explore Our Gallery Hub</h2>
+          <p class="section-desc">Select an event collection below to browse photos and videos.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- 1. School Compounds -->
+          <div class="card card-glass card-featured reveal delay-1">
+            <div class="card-icon">🏫</div>
+            <h3 class="card-title">School Compounds &amp; Video Tour</h3>
+            <p class="card-desc">
+              Explore our spacious outdoor recreational grounds, secure campus facilities, and take a video walkthrough of the school environment.
+            </p>
+            <a href="school compounds.html" class="btn-liquid">
+              <span>View Compounds &amp; Videos &rarr;</span>
+            </a>
+          </div>
+
+          <!-- 2. Students Birthdays -->
+          <div class="card card-glass reveal delay-2">
+            <div class="card-icon">🎂</div>
+            <h3 class="card-title">Students' Birthdays</h3>
+            <p class="card-desc">
+              Heartwarming pictures of our young learners celebrating their milestone birthdays with teachers and fellow classmates.
+            </p>
+            <a href="studentsBirthdays.html" class="btn-liquid btn-liquid-secondary">
+              <span>View Birthday Celebrations &rarr;</span>
+            </a>
+          </div>
+
+          <!-- 3. Students in Classes -->
+          <div class="card card-glass reveal delay-3">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Students in Classes &amp; Meals</h3>
+            <p class="card-desc">
+              See our dedicated teachers in action guiding interactive lessons, handwriting practice, group exercises, and supervised meal times.
+            </p>
+            <a href="classes.html" class="btn-liquid btn-liquid-secondary">
+              <span>View Class Sessions &rarr;</span>
+            </a>
+          </div>
+
+          <!-- 4. Opportunity Day 2026 -->
+          <div class="card card-glass reveal delay-4">
+            <div class="card-icon">🎉</div>
+            <h3 class="card-title">Opportunity Day 2026</h3>
+            <p class="card-desc">
+              Highlights and special memories from our annual school gala, performance exhibitions, student awards, and parent community festivities.
+            </p>
+            <a href="classes.html" class="btn-liquid btn-liquid-gold">
+              <span>Explore Annual Highlights &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dynamic Random Showcase Banner -->
+      <section class="section reveal delay-2">
+        <div class="section-header">
+          <span class="section-badge">Campus Spotlight</span>
+          <h2 class="section-title">A Glimpse Into Our Daily Joy</h2>
+        </div>
+
+        <div id="randomChange" class="hero-media-wrapper" style="height: 380px; background-size: cover; background-position: center; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); transition: background-image 1s ease-in-out;">
+        </div>
+      </section>
+    </main>
+
+    <!-- Refined Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Opportunity Daycare</h3>
+          <p class="footer-tagline">Building a strong foundation for your child's future in Dar es Salaam.</p>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Location: Chanika, Dar es Salaam, Tanzania</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <span>Phone: +255 713 656 262 &bull; +255 752 626 265</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>Email: opportunitynurseryschool@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About School</a></li>
+            <li><a href="service.html">Education Services</a></li>
+            <li><a href="schoolGallery.html">School Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Categories</h4>
+          <ul class="footer-list">
+            <li><a href="school compounds.html">School Compounds</a></li>
+            <li><a href="studentsBirthdays.html">Students Birthdays</a></li>
+            <li><a href="classes.html">Students in Classes</a></li>
+            <li><a href="School management system.html">OES Portal Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Opportunity Daycare and Nursery School. All rights reserved.</p>
+        <div class="footer-credits">
+          <span>Designed with care by Lucas &bull; Phone: +255 787 608 277</span>
+          <img src="../images/lucas.jpeg" alt="Lucas designer" class="developer-avatar" width="32" height="32" loading="lazy">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

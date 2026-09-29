@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=page%20files/firstPage.html">
+  <title>Opportunity Daycare &amp; Nursery Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: radial-gradient(circle at 10% 20%, rgba(224, 122, 95, 0.12) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, rgba(221, 161, 94, 0.12) 0%, transparent 40%),
+                  #FAF7F2;
+      color: #272320;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .portal-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 28px;
+      padding: 40px 32px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 42px -10px rgba(45, 35, 30, 0.12);
+    }
+    .crest {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 3px solid #C85A32;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 16px rgba(200, 90, 50, 0.25);
+    }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #675E57;
+      font-size: 0.925rem;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #C85A32 0%, #E07A5F 100%);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 9999px;
+      box-shadow: 0 4px 14px rgba(200, 90, 50, 0.3);
+      transition: transform 0.2s ease, border-radius 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      border-radius: 24px 12px 24px 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="portal-card">
+    <img src="images/OES LOGO.jpg" alt="Opportunity Daycare Crest" class="crest">
+    <h1>Opportunity Daycare &amp; Nursery Center</h1>
+    <p>Opening our school campus... If you are not redirected automatically, please click below.</p>
+    <a href="page files/firstPage.html" class="btn">Enter School Campus &rarr;</a>
+  </div>
+  <script>
+    window.location.replace("page files/firstPage.html");
+  </script>
+</body>
+</html>

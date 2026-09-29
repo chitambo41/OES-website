@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Opportunity Daycare & Nursery Center — Founded in 2025 by Opportunity Education Support (OES) to nurture young minds through quality education, creativity, and play-based learning.">
+  <title>About Us — Opportunity Daycare &amp; Nursery School</title>
+
+  <!-- Google Fonts: Warm Display + Clean Readable Body (Preconnected & Swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Immediate Theme Application (Zero FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('oes_theme_preference');
+      const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="home.html" class="brand" aria-label="Opportunity Daycare Home">
+          <img src="../images/OES LOGO.jpg" alt="Opportunity Daycare Crest" class="brand-logo" width="46" height="46">
+          <div class="brand-text">
+            <span class="brand-title">Opportunity Daycare</span>
+            <span class="brand-subtitle">& Nursery School</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="About.html" class="nav-link active">About</a></li>
+            <li><a href="service.html" class="nav-link">Services</a></li>
+            <li><a href="service.html#admission" class="nav-link">Admission</a></li>
+            <li><a href="schoolGallery.html" class="nav-link">School Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.3 2a10 10 0 0 0 9.7 12.8 10 10 0 1 1-12.5-12.6c.9-.2 1.9-.2 2.8-.2z"/>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bars">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Hero Introduction -->
+      <section class="hero-card reveal">
+        <div class="hero-badge">🏛️ School History &amp; Identity</div>
+        <h1 class="hero-title">
+          Our Story of <span class="highlight">Purpose &amp; Passion</span>
+        </h1>
+        <p class="hero-subtitle">
+          Established in 2025 by Opportunity Education Support (OES), Opportunity Daycare &amp; Nursery Center was founded to support early childhood development by seamlessly combining quality education, creativity, and play-based learning.
+        </p>
+      </section>
+
+      <!-- History Narrative & Image Section -->
+      <section class="section reveal delay-1">
+        <div class="card card-glass" style="margin-bottom: var(--space-xl);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-xl); align-items: center;">
+            <div>
+              <span class="section-badge">How It Began</span>
+              <h2 class="card-title" style="font-size: 1.85rem; margin-top: 8px;">A Commitment to Every Child</h2>
+              <p class="card-desc" style="font-size: 1.025rem; line-height: 1.75; margin-bottom: var(--space-md);">
+                Since its establishment, <strong>Opportunity Daycare and Nursery Center</strong> has remained steadfastly committed to helping children develop strong foundations in language, numeracy, social skills, and personal confidence.
+              </p>
+              <p class="card-desc" style="font-size: 1.025rem; line-height: 1.75;">
+                Through the tireless dedication of our professional teachers and wonderful support from parents, the school continues to grow, providing a warm, welcoming environment where every child is seen, supported, and valued.
+              </p>
+            </div>
+            <div class="hero-media-wrapper" style="margin: 0;">
+              <img src="../images/IMG-20251125-WA0001.jpg" alt="Opportunity Nursery students and campus life" width="540" height="380" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision Cards (Asymmetric Focus) -->
+      <section class="section reveal delay-2">
+        <div class="section-header">
+          <span class="section-badge">Purpose &amp; Horizon</span>
+          <h2 class="section-title">Our Guiding North Star</h2>
+          <p class="section-desc">Principles that drive our teaching methods, our curriculum, and our care every day.</p>
+        </div>
+
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+          <!-- Mission Card -->
+          <div class="card card-glass card-featured reveal delay-1">
+            <div class="card-icon" style="background: var(--color-primary-soft); color: var(--color-primary);" aria-hidden="true">🚀</div>
+            <h3 class="card-title">Our Mission</h3>
+            <p class="card-desc" style="font-size: 1.15rem; font-weight: 500; line-height: 1.65; color: var(--text-main);">
+              &ldquo;To empower every child, every person on the planet to achieve more through quality education, character building, and limitless opportunity.&rdquo;
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">Empowerment</li>
+              <li class="pill-item">Equity</li>
+              <li class="pill-item">Lifelong Learning</li>
+            </ul>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="card card-glass reveal delay-2">
+            <div class="card-icon" style="background: var(--color-gold-soft); color: var(--color-gold);" aria-hidden="true">👁️</div>
+            <h3 class="card-title">Our Vision</h3>
+            <p class="card-desc" style="font-size: 1.15rem; font-weight: 500; line-height: 1.65; color: var(--text-main);">
+              &ldquo;To create local opportunity growth and meaningful impact in every child so they are able to live an independent, confident, and joyful life.&rdquo;
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">Confidence</li>
+              <li class="pill-item">Independence</li>
+              <li class="pill-item">Local Community Impact</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comprehensive Tuition Levels (Preserved content hierarchy) -->
+      <section class="section reveal delay-3">
+        <div class="section-header">
+          <span class="section-badge">Academic Horizons</span>
+          <h2 class="section-title">Comprehensive Tuition Services</h2>
+          <p class="section-desc">
+            Rather than providing only childhood education, we are dedicated to providing tuition services for different levels of study to ensure academic mastery.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <div class="card card-glass reveal delay-1">
+            <div class="card-icon" aria-hidden="true">✏️</div>
+            <h3 class="card-title">Primary Level</h3>
+            <p class="card-desc">Standard 1 to Standard 7 syllabus coaching, homework support, and intensive exam preparation.</p>
+            <a href="primary.html" class="btn-liquid btn-liquid-secondary" style="margin-top:auto;">View Primary Tuition &rarr;</a>
+          </div>
+
+          <div class="card card-glass reveal delay-2">
+            <div class="card-icon" aria-hidden="true">📐</div>
+            <h3 class="card-title">Secondary Level</h3>
+            <p class="card-desc">Advanced subject coaching for Form 1 through Form 4 in sciences, arts, and mathematics.</p>
+            <a href="service.html" class="btn-liquid btn-liquid-secondary" style="margin-top:auto;">View Secondary Tuition &rarr;</a>
+          </div>
+
+          <div class="card card-glass reveal delay-3">
+            <div class="card-icon" aria-hidden="true">🎓</div>
+            <h3 class="card-title">Pre-Form One</h3>
+            <p class="card-desc">Intensive transition bridging courses running from September to December each year.</p>
+            <a href="service.html" class="btn-liquid btn-liquid-secondary" style="margin-top:auto;">Explore Pre-Form 1 &rarr;</a>
+          </div>
+
+          <div class="card card-glass reveal delay-4">
+            <div class="card-icon" aria-hidden="true">🏆</div>
+            <h3 class="card-title">Pre-Form Five</h3>
+            <p class="card-desc">Advanced Level preparation starting directly after Form Four NECTA exams in November.</p>
+            <a href="service.html" class="btn-liquid btn-liquid-secondary" style="margin-top:auto;">Explore Pre-Form 5 &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Refined Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Opportunity Daycare</h3>
+          <p class="footer-tagline">Building a strong foundation for your child's future in Dar es Salaam.</p>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Location: Chanika, Dar es Salaam, Tanzania</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <span>Phone: +255 713 656 262 &bull; +255 752 626 265</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>Email: opportunitynurseryschool@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About School</a></li>
+            <li><a href="service.html">Education Services</a></li>
+            <li><a href="service.html#admission">Admission Form</a></li>
+            <li><a href="schoolGallery.html">School Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore More</h4>
+          <ul class="footer-list">
+            <li><a href="classes.html">Classes &amp; Meals</a></li>
+            <li><a href="studentsBirthdays.html">Birthdays Celebrations</a></li>
+            <li><a href="school compounds.html">Compounds &amp; Video Tour</a></li>
+            <li><a href="School management system.html">OES Portal Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Opportunity Daycare and Nursery School. All rights reserved.</p>
+        <div class="footer-credits">
+          <span>Designed with care by Lucas &bull; Phone: +255 787 608 277</span>
+          <img src="../images/lucas.jpeg" alt="Lucas designer" class="developer-avatar" width="32" height="32" loading="lazy">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

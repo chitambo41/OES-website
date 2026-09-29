@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karibu Opportunity Education Support (OES) — Taasisi ya kielimu yenye matawi Chanika (Dar es Salaam) na Mofu, Mlimba (Morogoro).">
+  <title>Karibu — Opportunity Education Support (OES)</title>
+
+  <!-- Google Fonts: Warm Display + Clean Readable Body (Preconnected & Swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Immediate Theme Application (Zero FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('oes_theme_preference');
+      const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand" aria-label="Opportunity Education Support">
+          <img src="../images/OES LOGO.jpg" alt="OES Crest" class="brand-logo" width="46" height="46">
+          <div class="brand-text">
+            <span class="brand-title">Opportunity Education</span>
+            <span class="brand-subtitle">Support &bull; OES</span>
+          </div>
+        </a>
+
+        <nav aria-label="Urambazaji Kuu">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Nyumbani</a></li>
+            <li><a href="About.html" class="nav-link">Kuhusu Sisi</a></li>
+            <li><a href="services.html" class="nav-link">Huduma (Swahili)</a></li>
+            <li><a href="home.html" class="nav-link">Daycare (English)</a></li>
+            <li><a href="schoolGallery.html" class="nav-link">Picha &amp; Video</a></li>
+            <li><a href="#contact" class="nav-link">Mawasiliano</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Badili muonekano">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.3 2a10 10 0 0 0 9.7 12.8 10 10 0 1 1-12.5-12.6c.9-.2 1.9-.2 2.8-.2z"/>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="menu-toggle-btn" aria-label="Onyesha menyu" aria-expanded="false">
+            <span class="hamburger-bars">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Hero Card -->
+      <section class="hero-card reveal">
+        <div class="hero-badge">🇹🇿 Karibu Sana OES</div>
+        <h1 class="hero-title">
+          Opportunity Education <span class="highlight">Support (OES)</span>
+        </h1>
+        <p class="hero-subtitle">
+          Karibu sana katika taasisi yetu ya <strong>Opportunity Education Support (OES)</strong>. Taasisi yetu inatoa huduma mbalimbali zikijikita zaidi katika kuboresha kiwango na ubora wa elimu kwa watoto na vijana.
+        </p>
+
+        <div class="hero-media-wrapper reveal delay-1" style="margin-bottom: var(--space-lg);">
+          <img src="../images/IMG-20251125-WA0036.jpg" alt="Wanafunzi wa Opportunity Education Support wakiwa darasani" width="850" height="480" loading="eager" decoding="async">
+        </div>
+
+        <div class="hero-actions">
+          <a href="services.html" class="btn-liquid">
+            <span>Endelea / Continue to Services</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="home.html" class="btn-liquid btn-liquid-secondary">
+            <span>Daycare English Portal</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Matawi Yetu (Branches Section) -->
+      <section class="section reveal delay-2">
+        <div class="section-header">
+          <span class="section-badge">Matawi ya Taasisi</span>
+          <h2 class="section-title">Matawi Yetu Nchini Tanzania</h2>
+          <p class="section-desc">Taasisi yetu kwa sasa ina matawi mawili makuu yanayotoa huduma za elimu na mafunzo.</p>
+        </div>
+
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <!-- Tawi Kuu -->
+          <div class="card card-glass card-featured reveal delay-1">
+            <div class="card-icon">📍</div>
+            <h3 class="card-title">Tawi Kuu — Dar es Salaam</h3>
+            <p class="card-desc">
+              Linapatikana mkoani <strong>Dar es Salaam</strong>, eneo la <strong>Chanika</strong>. Hapa ndipo lilipo tawi kuu linalotoa elimu ya chekechea (Daycare &amp; Nursery) pamoja na masomo ya ziada ya msingi na sekondari.
+            </p>
+            <span class="pill-item" style="align-self: flex-start;">Tawi Kuu (Headquarters)</span>
+          </div>
+
+          <!-- Tawi la Pili -->
+          <div class="card card-glass reveal delay-2">
+            <div class="card-icon">🏫</div>
+            <h3 class="card-title">Tawi la Pili — Morogoro</h3>
+            <p class="card-desc">
+              Tawi letu jingine linapatikana mkoani <strong>Morogoro</strong>, wilayani <strong>Mlimba</strong>, kata ya <strong>Mofu</strong>, likiwahudumia wanafunzi na jamii ya eneo hilo kwa viwango vya juu vya elimu.
+            </p>
+            <span class="pill-item" style="align-self: flex-start;">Morogoro / Mlimba / Mofu</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Refined Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Opportunity Education Support (OES)</h3>
+          <p class="footer-tagline">Kujenga msingi imara na kukuza vipaji vya watoto kielimu na kimaadili.</p>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Tawi Kuu: Chanika, Dar es Salaam &bull; Tawi la Pili: Mofu, Mlimba, Morogoro</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <span>Simu: +255 713 656 262 &bull; +255 752 626 265</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>Barua Pepe: opportunitynurseryschool@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Urambazaji</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Nyumbani</a></li>
+            <li><a href="About.html">Kuhusu Sisi</a></li>
+            <li><a href="services.html">Huduma Zetu</a></li>
+            <li><a href="home.html">Tovuti Kuu (English)</a></li>
+            <li><a href="schoolGallery.html">Picha za Shule</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mifumo</h4>
+          <ul class="footer-list">
+            <li><a href="School management system.html">OES Management Login</a></li>
+            <li><a href="service.html#admission">Fomu ya Kujiunga</a></li>
+            <li><a href="school compounds.html">Mazingira ya Shule</a></li>
+            <li><a href="studentsBirthdays.html">Sherehe za Kuzaliwa</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Opportunity Education Support. Haki zote zimehifadhiwa.</p>
+        <div class="footer-credits">
+          <span>Imebuniwa na Lucas &bull; Simu: +255 787 608 277</span>
+          <img src="../images/lucas.jpeg" alt="Lucas mbunifu" class="developer-avatar" width="32" height="32" loading="lazy">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
