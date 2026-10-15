@@ -233,7 +233,7 @@
             </p>
           </div>
 
-          <form id="admission-form" action="mailto:chitambolucas@gmail.com" method="post" enctype="text/plain" style="text-align: left;">
+          <form id="admission-form" action="#" method="post" enctype="text/plain" style="text-align: left;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md);">
               <div class="form-group">
                 <label class="form-label" for="parent_name">Parent / Guardian Name</label>
@@ -248,8 +248,13 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md);">
               <div class="form-group">
-                <label class="form-label" for="child_name">Child's Name &amp; Age</label>
-                <input class="form-input" type="text" id="child_name" name="Child Name and Age" placeholder="e.g. Sarah, 3 years old" required>
+                <label class="form-label" for="child_name">Child's Name</label>
+                <input class="form-input" type="text" id="child_name" name="Child Name" placeholder="e.g. Sarah Salehe" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="child_age">Child's Age</label>
+                <input class="form-input" type="number" id="child_age" name="Child Age" placeholder="e.g. 4" min="2" max="18" required>
               </div>
 
               <div class="form-group">

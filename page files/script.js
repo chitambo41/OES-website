@@ -86,25 +86,24 @@
       const fields = Array.from(formData.entries()).filter(function (entry) {
         return !entry[0].startsWith('_');
       });
-      const composeUrl = 'https://mail.google.com/mail/?' + new URLSearchParams({
-        view: 'cm',
-        fs: '1',
-        to: 'chitambolucas@gmail.com',
-        su: 'New admission inquiry',
-        body: fields.map(function (entry) {
-          return entry[0] + ': ' + entry[1];
-        }).join('\n')
-      }).toString();
+
+      const whatsappNumber = '255713656262';
+      const messageText = fields.map(function (entry) {
+        return entry[0] + ': ' + entry[1];
+      }).join('\n');
+      const whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent('New admission inquiry\n\n' + messageText);
+
       const fallbackLink = document.createElement('a');
-      fallbackLink.href = composeUrl;
-      fallbackLink.textContent = 'Open the Gmail draft';
+      fallbackLink.href = whatsappUrl;
+      fallbackLink.textContent = 'Open WhatsApp chat';
       status.hidden = false;
       status.replaceChildren(
-        document.createTextNode('Your email app should open with the inquiry. Press Send there. If it does not open, '),
+        document.createTextNode('Opening WhatsApp so the admission details can be sent to +255713656262. If it does not open, '),
         fallbackLink,
         document.createTextNode('.')
       );
-      window.location.href = composeUrl;
+
+      window.open(whatsappUrl, '_blank');
     });
   }
 
