@@ -253,8 +253,23 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="child_age">Child's Age</label>
-                <input class="form-input" type="number" id="child_age" name="Child Age" placeholder="e.g. 4" min="2" max="18" required>
+                <label class="form-label" for="child_dob">Date of Birth</label>
+                <input class="form-input" type="date" id="child_dob" name="Child Date of Birth" required placeholder="DD-MM-YYYY">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="child_gender">Gender</label>
+                <select class="form-select" id="child_gender" name="Child Gender" required>
+                  <option value="">-- Select Gender --</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other / Prefer not to say</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="address">Address</label>
+                <input class="form-input" type="text" id="address" name="Address" placeholder="e.g. nyeburu, chanika" required>
               </div>
 
               <div class="form-group">

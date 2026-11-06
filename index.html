@@ -3,83 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=page%20files/firstPage.html">
-  <title>Opportunity Daycare &amp; Nursery Center</title>
+  <meta name="description" content="Choose English or Kiswahili to browse the Opportunity Daycare and Nursery School website.">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Choose Your Language — Opportunity Daycare &amp; Nursery School</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
+    :root {
+      color-scheme: light;
       font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-      background: radial-gradient(circle at 10% 20%, rgba(224, 122, 95, 0.12) 0%, transparent 40%),
-                  radial-gradient(circle at 90% 80%, rgba(221, 161, 94, 0.12) 0%, transparent 40%),
-                  #FAF7F2;
-      color: #272320;
+      color: #1a1714;
+      background: #f7f4ef;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(ellipse at 12% 15%, rgba(184, 77, 40, 0.10), transparent 38%),
+        radial-gradient(ellipse at 90% 85%, rgba(221, 161, 94, 0.14), transparent 40%),
+        #f7f4ef;
     }
-    .portal-card {
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      border-radius: 28px;
-      padding: 40px 32px;
-      max-width: 440px;
-      width: 100%;
+
+    main {
+      width: min(100%, 760px);
+      padding: clamp(28px, 7vw, 60px);
       text-align: center;
-      box-shadow: 0 20px 42px -10px rgba(45, 35, 30, 0.12);
+      background: rgba(253, 251, 248, 0.94);
+      border: 1px solid rgba(30, 22, 14, 0.09);
+      border-radius: 22px;
+      box-shadow: 0 18px 48px rgba(35, 25, 18, 0.10);
     }
+
     .crest {
-      width: 72px;
-      height: 72px;
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 20px;
       border-radius: 50%;
-      border: 3px solid #C85A32;
-      margin: 0 auto 16px;
-      box-shadow: 0 4px 16px rgba(200, 90, 50, 0.25);
+      object-fit: cover;
+      box-shadow: 0 4px 16px rgba(184, 77, 40, 0.2);
     }
+
+    h1, h2 {
+      font-family: Outfit, system-ui, sans-serif;
+      line-height: 1.2;
+    }
+
     h1 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 8px;
+      margin: 0;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
     }
-    p {
-      color: #675E57;
-      font-size: 0.925rem;
-      margin-bottom: 24px;
+
+    .intro {
+      margin: 12px 0 30px;
+      color: #5c5249;
+      line-height: 1.7;
+    }
+
+    .language-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: 16px;
+      text-align: left;
+    }
+
+    .language-option {
+      display: flex;
+      min-height: 152px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid rgba(30, 22, 14, 0.12);
+      border-radius: 14px;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .language-option:hover {
+      transform: translateY(-3px);
+      border-color: #b84d28;
+      box-shadow: 0 8px 22px rgba(35, 25, 18, 0.10);
+    }
+
+    .language-option:focus-visible {
+      outline: 3px solid #b84d28;
+      outline-offset: 4px;
+    }
+
+    .language-option h2 {
+      margin: 0 0 8px;
+      font-size: 1.35rem;
+    }
+
+    .language-option p {
+      margin: 0;
+      color: #5c5249;
       line-height: 1.55;
     }
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: linear-gradient(135deg, #C85A32 0%, #E07A5F 100%);
-      color: #fff;
-      text-decoration: none;
+
+    .continue {
+      margin-top: 14px;
+      color: #9e3e1c;
       font-weight: 700;
-      border-radius: 9999px;
-      box-shadow: 0 4px 14px rgba(200, 90, 50, 0.3);
-      transition: transform 0.2s ease, border-radius 0.2s ease;
     }
-    .btn:hover {
-      transform: translateY(-2px) scale(1.02);
-      border-radius: 24px 12px 24px 12px;
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="portal-card">
-    <img src="images/OES LOGO.jpg" alt="Opportunity Daycare Crest" class="crest">
-    <h1>Opportunity Daycare &amp; Nursery Center</h1>
-    <p>Opening our school campus... If you are not redirected automatically, please click below.</p>
-    <a href="page files/firstPage.html" class="btn">Enter School Campus &rarr;</a>
-  </div>
-  <script>
-    window.location.replace("page files/firstPage.html");
-  </script>
+  <main>
+    <img src="images/OES LOGO.jpg" alt="Opportunity Daycare and Nursery School crest" class="crest" width="76" height="76">
+    <h1>Choose Your Language</h1>
+    <p class="intro">Select the language you would like to use to browse our website.</p>
+
+    <div class="language-options">
+      <a class="language-option" href="page%20files/firstPage.html" lang="en">
+        <h2>English</h2>
+        <p>Browse the website in English.</p>
+        <span class="continue">Continue in English &rarr;</span>
+      </a>
+      <a class="language-option" href="page%20files/index.html" lang="sw">
+        <h2>Kiswahili</h2>
+        <p>Tembelea tovuti kwa Kiswahili.</p>
+        <span class="continue">Endelea kwa Kiswahili &rarr;</span>
+      </a>
+    </div>
+  </main>
 </body>
 </html>
